@@ -41,7 +41,7 @@ all:	wordcount
 wordcount:	$(OBJECTS)
 	$(CXX) $(LDFLAGS) -o wordcount $(OBJECTS)
 
-wordcount.o:	wordcount.cc wordcount.hh
+wordcount.o:	wordcount.cc wordcount.h
 	$(CXX) $(CPPFLAGS) wordcount.cc
 
 clean:
